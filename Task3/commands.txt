@@ -1,0 +1,54 @@
+# Task 1
+In the root directory:
+sudo mkdir fcse fee fes fme fcve
+
+# Task 2
+
+sudo chown root:fcse /fcse
+sudo chown root:fee /fee
+sudo chown root:fme /fme
+sudo chown root:fcve /fcve
+sudo chown root:fes /fes
+
+sudo chmod 755 /fcse /fee /fes /fme /fcve
+
+sudo useradd -g fcse fcse
+sudo useradd -g fme fme
+sudo useradd -g fe fee
+sudo useradd -g fee fee
+sudo useradd -g fes fes
+sudo useradd -g fcve fcve
+sudo setfacl -m u:fcse:r /fee /fes /fme /fcve
+
+# Task 5
+
+dos2unix creating-files.sh
+chmod +x creating-files.sh 
+./creating-files.sh 
+
+Part a:
+tar -cvzf task3-4.tar.gz Task3-4/*
+
+Part b:
+rm -r Task3-4/*
+tar -xvzf task3-4.tar.gz Task3-4/
+
+Part c1:
+find Task3-4 -mtime -90
+
+Part c2:
+find Task3-4 -size +100k
+
+Part c3:
+find Task3-4 -name "*3*"
+
+Part c4:
+find Task3-4 -mtime +60 -size +100k -delete
+
+Part c5:
+find Task3-4 -ctime -10 -delete
+
+Part c6:
+find Task3-4 -size -1k -mtime +120 -delete
+
+

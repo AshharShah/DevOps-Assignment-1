@@ -1,0 +1,4 @@
+We observe that none of the users that we have created can write to any of the created directory.
+This is because we have only provided the read permissions to the fcse user so he can only read the files in his respective directory.
+
+We also see that only the root user can create the file in the directory, this is because he is the owner of the directory as we can see when we run the ls -la command.

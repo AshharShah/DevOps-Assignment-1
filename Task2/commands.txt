@@ -1,0 +1,74 @@
+# Task 1
+
+Commands To Create Uses:
+sudo adduser cs423_devops_user_1
+sudo adduser cs423_devops_user_2
+sudo adduser cs423_devops_user_3
+sudo adduser cs423_devops_user_4
+sudo adduser cs423_devops_user_5
+
+Commands To Set User Passwords
+sudo passwd cs423_devops_user_1
+sudo passwd cs423_devops_user_2
+sudo passwd cs423_devops_user_3
+sudo passwd cs423_devops_user_4
+sudo passwd cs423_devops_user_5
+
+# Task 2
+
+Commands To Create Groups
+sudo groupadd fcse
+sudo groupadd fee
+sudo groupadd fes
+sudo groupadd fme
+sudo groupadd fcve
+
+Commands To Add Users To Groups
+sudo usermod -aG fcse cs423_devops_user_1
+sudo usermod -aG fee cs423_devops_user_2
+sudo usermod -aG fes cs423_devops_user_3
+sudo usermod -aG fme cs423_devops_user_4
+sudo usermod -aG fcve cs423_devops_user_5
+
+# Task 3
+
+sudo visudo // It is a tool to update the sudoers file to allow usrs to run commands with super-user privileges
+
+Add Line: cs423_devops_user_2 ALL=(ALL) /sbin/reboot
+
+# Task 4
+sudo usermod -aG sudo cs423_devops_user_1
+
+# Task 5
+sudo -u cs423_devops_user_1 ssh-keygen
+sudo -u cs423_devops_user_2 ssh-keygen
+sudo -u cs423_devops_user_3 ssh-keygen
+sudo -u cs423_devops_user_4 ssh-keygen
+sudo -u cs423_devops_user_5 ssh-keygen
+
+To View The KeyGen Files
+ls cs423_devops_user_1 /home/cs423_devops_user_1/.ssh
+ls cs423_devops_user_2 /home/cs423_devops_user_2/.ssh
+ls cs423_devops_user_3 /home/cs423_devops_user_3/.ssh
+ls cs423_devops_user_4 /home/cs423_devops_user_4/.ssh
+ls cs423_devops_user_5 /home/cs423_devops_user_5/.ssh
+
+# Task 6
+sudo nano /home/cs423_devops_user_1/.ssh/config
+sudo nano /home/cs423_devops_user_2/.ssh/config
+sudo nano /home/cs423_devops_user_3/.ssh/config
+sudo nano /home/cs423_devops_user_4/.ssh/config
+sudo nano /home/cs423_devops_user_5/.ssh/config
+
+The Files Have The Following:
+Host cs423_devops_user_1
+    HostName 10.0.1.237
+    User cs423_devops_user_1
+    IdentityFile ~/.ssh/cs423_devops_user_1
+
+# Task 8
+sudo nano /etc/ssh/sshd_config
+
+Add The Following Lines:
+Port 22
+Port 25
