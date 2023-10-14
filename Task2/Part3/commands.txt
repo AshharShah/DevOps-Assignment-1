@@ -1,0 +1,4 @@
+sudo visudo // It is a tool to update the sudoers file to allow usrs to run commands with super-user privileges
+
+# In The Document, Add Line: 
+cs423_devops_user_2 ALL=(ALL) /sbin/reboot

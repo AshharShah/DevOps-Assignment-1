@@ -1,0 +1,13 @@
+# Commands To Create Groups
+sudo groupadd fcse
+sudo groupadd fee
+sudo groupadd fes
+sudo groupadd fme
+sudo groupadd fcve
+
+# Commands To Add Users To Groups
+sudo usermod -aG fcse cs423_devops_user_1
+sudo usermod -aG fee cs423_devops_user_2
+sudo usermod -aG fes cs423_devops_user_3
+sudo usermod -aG fme cs423_devops_user_4
+sudo usermod -aG fcve cs423_devops_user_5

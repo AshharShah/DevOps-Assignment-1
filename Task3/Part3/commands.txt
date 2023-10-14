@@ -1,0 +1,14 @@
+# Task 3
+su cs423_devops_user_1
+touch /fcse/test.txt
+touch /fme/test.txt
+touch /fee/test.txt
+touch /fcve/test.txt
+touch /fes/test.txt
+
+su cs423_devops_user_2
+touch /fcse/test.txt
+touch /fme/test.txt
+touch /fee/test.txt
+touch /fcve/test.txt
+touch /fes/test.txt

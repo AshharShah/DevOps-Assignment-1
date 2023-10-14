@@ -1,0 +1,2 @@
+# In the root directory:
+sudo mkdir fcse fee fes fme fcve

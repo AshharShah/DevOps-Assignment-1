@@ -1,0 +1,3 @@
+# Task 5
+Use -h for making it more human readable
+df -h

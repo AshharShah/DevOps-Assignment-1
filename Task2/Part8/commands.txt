@@ -1,0 +1,5 @@
+sudo nano /etc/ssh/sshd_config
+
+Add The Following Lines:
+Port 22
+Port 25

@@ -1,0 +1,12 @@
+sudo -u cs423_devops_user_1 ssh-keygen
+sudo -u cs423_devops_user_2 ssh-keygen
+sudo -u cs423_devops_user_3 ssh-keygen
+sudo -u cs423_devops_user_4 ssh-keygen
+sudo -u cs423_devops_user_5 ssh-keygen
+
+To View The KeyGen Files
+ls cs423_devops_user_1 /home/cs423_devops_user_1/.ssh
+ls cs423_devops_user_2 /home/cs423_devops_user_2/.ssh
+ls cs423_devops_user_3 /home/cs423_devops_user_3/.ssh
+ls cs423_devops_user_4 /home/cs423_devops_user_4/.ssh
+ls cs423_devops_user_5 /home/cs423_devops_user_5/.ssh

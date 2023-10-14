@@ -1,0 +1,12 @@
+# Task 4
+sudo find ./ -name test.txt
+
+su cs423_devops_user_1
+find ./ -name test.txt
+
+su cs423_devops_user_2
+find /fcse -name test.txt
+find /fee -name test.txt
+find /fes -name test.txt
+find /fcve -name test.txt
+find /fme -name test.txt

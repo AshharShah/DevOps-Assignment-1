@@ -1,0 +1,3 @@
+# Task 3
+sudo apt upgrade nano
+nano --version

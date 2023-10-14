@@ -1,0 +1,30 @@
+# Task 5
+
+dos2unix creating-files.sh
+chmod +x creating-files.sh 
+./creating-files.sh 
+
+# Part a:
+tar -cvzf task3-4.tar.gz Task3-4/*
+
+# Part b:
+rm -r Task3-4/*
+tar -xvzf task3-4.tar.gz Task3-4/
+
+# Part c1:
+find Task3-4 -mtime -90
+
+# Part c2:
+find Task3-4 -size +100k
+
+# Part c3:
+find Task3-4 -name "*3*"
+
+# Part c4:
+find Task3-4 -mtime +60 -size +100k -delete
+
+# Part c5:
+find Task3-4 -ctime -10 -delete
+
+# Part c6:
+find Task3-4 -size -1k -mtime +120 -delete

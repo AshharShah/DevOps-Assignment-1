@@ -1,0 +1,7 @@
+# Task 3
+Create 2 processes in background
+sleep 10 & 
+sleep 20 &
+
+# Display the background processes:
+ps

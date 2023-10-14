@@ -1,0 +1,5 @@
+# Get the key
+cat ./cs423-assignment1
+
+# Add Key To authorized_keys
+sudo nano .ssh/authorized_keys

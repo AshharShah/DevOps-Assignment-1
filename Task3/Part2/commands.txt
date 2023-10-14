@@ -1,0 +1,25 @@
+# Task 2
+sudo chown :fcse /fcse
+sudo chmod 770 /fcse
+sudo chmod o-rwx /fcse
+sudo chown :fee /fee
+sudo chmod 770 /fee
+sudo chmod o-rwx /fee
+sudo chown :fme /fme
+sudo chmod 770 /fme
+sudo chmod o-rwx /fme
+sudo chown :fes /fes
+sudo chmod 770 /fes
+sudo chmod o-rwx /fes
+sudo chown :fcve /fcve
+sudo chmod 770 /fcve
+sudo chmod o-rwx /fcve
+
+# Part A:
+sudo setfacl -m g:fcse:r-x /fee
+sudo setfacl -m g:fcse:r-x /fme
+sudo setfacl -m g:fcse:r-x /fes
+sudo setfacl -m g:fcse:r-x /fcve
+
+# Part B:
+sudo setfacl -m u:cs423_devops_user_3:r-x /fcve

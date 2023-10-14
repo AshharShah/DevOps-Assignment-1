@@ -1,0 +1,11 @@
+sudo nano /home/cs423_devops_user_1/.ssh/config
+sudo nano /home/cs423_devops_user_2/.ssh/config
+sudo nano /home/cs423_devops_user_3/.ssh/config
+sudo nano /home/cs423_devops_user_4/.ssh/config
+sudo nano /home/cs423_devops_user_5/.ssh/config
+
+The Files Have The Following:
+Host cs423_devops_user_1
+    HostName 10.0.1.237
+    User cs423_devops_user_1
+    IdentityFile ~/.ssh/cs423_devops_user_1
