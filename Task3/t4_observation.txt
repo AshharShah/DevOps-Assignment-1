@@ -1,0 +1,7 @@
+No matter what permissions a user has set, as the root user, we have access to any file on the system.
+Hence as the root user i can easily search for any file inside all of the directories regardless of the policies.
+
+As a group member i can also search for the file using the file command inside the directories of which the group user has access.
+
+However, as a non group member, it is unable to access a directory other than my name directory and cannot locate the file
+using the find command as I am prompted with a premission denied error.

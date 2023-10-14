@@ -1,0 +1,6 @@
+When the user of a differenet group as assigned to the directory tries to make a file inside the directory
+he does not have the premissions to do so and is prompted with an error.
+
+However when the user that is assigned the same group as the directory tries to do the same he can as he is
+configured with the premissions to modify and write in the directory.
+

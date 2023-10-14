@@ -4,21 +4,59 @@ sudo mkdir fcse fee fes fme fcve
 
 # Task 2
 
-sudo chown root:fcse /fcse
-sudo chown root:fee /fee
-sudo chown root:fme /fme
-sudo chown root:fcve /fcve
-sudo chown root:fes /fes
+sudo chown :fcse /fcse
+sudo chmod 770 /fcse
+sudo chmod o-rwx /fcse
+sudo chown :fee /fee
+sudo chmod 770 /fee
+sudo chmod o-rwx /fee
+sudo chown :fme /fme
+sudo chmod 770 /fme
+sudo chmod o-rwx /fme
+sudo chown :fes /fes
+sudo chmod 770 /fes
+sudo chmod o-rwx /fes
+sudo chown :fcve /fcve
+sudo chmod 770 /fcve
+sudo chmod o-rwx /fcve
 
-sudo chmod 755 /fcse /fee /fes /fme /fcve
+Part A:
+sudo setfacl -m g:fcse:r-x /fee
+sudo setfacl -m g:fcse:r-x /fme
+sudo setfacl -m g:fcse:r-x /fes
+sudo setfacl -m g:fcse:r-x /fcve
 
-sudo useradd -g fcse fcse
-sudo useradd -g fme fme
-sudo useradd -g fe fee
-sudo useradd -g fee fee
-sudo useradd -g fes fes
-sudo useradd -g fcve fcve
-sudo setfacl -m u:fcse:r /fee /fes /fme /fcve
+Part B:
+sudo setfacl -m u:cs423_devops_user_3:r-x /fcve
+
+# Task 3
+su cs423_devops_user_1
+touch /fcse/test.txt
+touch /fme/test.txt
+touch /fee/test.txt
+touch /fcve/test.txt
+touch /fes/test.txt
+
+su cs423_devops_user_2
+touch /fcse/test.txt
+touch /fme/test.txt
+touch /fee/test.txt
+touch /fcve/test.txt
+touch /fes/test.txt
+
+# Task 4
+sudo find ./ -name test.txt
+
+su cs423_devops_user_1
+find ./ -name test.txt
+
+su cs423_devops_user_2
+find /fcse -name test.txt
+find /fee -name test.txt
+find /fes -name test.txt
+find /fcve -name test.txt
+find /fme -name test.txt
+
 
 # Task 5
 
